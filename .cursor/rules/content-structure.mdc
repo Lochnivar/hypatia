@@ -1,0 +1,31 @@
+---
+description: Hypatia content structure, frontmatter, and footnote conventions
+globs: "**/*.md"
+alwaysApply: false
+---
+
+# Hypatia Content Structure
+
+## File Layout
+
+- Worlds: `world-slug/index.md`
+- Books: `world-slug/book-slug/index.md`
+- Chapters: `world-slug/book-slug/ch01.md` (zero-pad)
+
+## Frontmatter
+
+- **World**: `layout: world`, `title`, `world`, `order`
+- **Book**: `layout: book`, `title`, `world`, `book`, `order`
+- **Chapter**: `layout: chapter`, `title`, `world`, `book`, `order`
+
+Use kebab-case slugs.
+
+## Footnotes
+
+Librarian voice—snarky, meta-commentary:
+
+```markdown
+[^1]: *The Librarian notes: ...*
+```
+
+See `meta/librarian/` for voice guide.

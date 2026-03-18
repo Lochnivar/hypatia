@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<article class="book-page">
+  <header class="page-header">
+    <h1>{{ page.title }}</h1>
+  </header>
+  <div class="page-content">
+    {{ content }}
+  </div>
+  <nav class="chapter-list">
+    <h2>Chapters</h2>
+    <ul>
+      {% assign chapters = site.pages | where: "layout", "chapter" | where: "world", page.world | where: "book", page.book | sort: "order" %}
+      {% for ch in chapters %}
+      <li><a href="{{ ch.url | relative_url }}">{{ ch.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</article>

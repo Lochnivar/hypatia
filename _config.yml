@@ -1,0 +1,20 @@
+# Hypatia - Static story site for GitHub Pages
+# Hierarchy: Index → World → Books → Chapters
+
+title: Hypatia
+description: A static site for self-published stories
+baseurl: ""
+url: ""
+
+# Exclude meta folder from build (author/AI reference only)
+exclude:
+  - meta
+
+# Flat URLs: /terra-nova/first-chronicle/ch01/
+permalink: pretty
+
+# Markdown processor (Kramdown supports footnotes)
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge

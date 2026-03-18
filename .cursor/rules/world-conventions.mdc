@@ -1,0 +1,24 @@
+---
+description: Hypatia world and book intro format
+globs: "**/index.md"
+alwaysApply: false
+---
+
+# World and Book Conventions
+
+## World Index
+
+- `layout: world`
+- `world: <slug>` (matches directory)
+- `order` for main page listing
+
+## Book Index
+
+- `layout: book`
+- `world`, `book: <slug>` (matches directory)
+- `order` for world page listing
+
+## Content
+
+- World: intro to the setting, themes, what readers can expect
+- Book: blurb, description, tone

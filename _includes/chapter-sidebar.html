@@ -1,0 +1,11 @@
+{% assign chapters = site.pages | where: "layout", "chapter" | where: "world", page.world | where: "book", page.book | sort: "order" %}
+<nav class="chapter-toc">
+  <h2>Chapters</h2>
+  <ul>
+    {% for ch in chapters %}
+    <li class="{% if ch.url == page.url %}current{% endif %}">
+      <a href="{{ ch.url | relative_url }}">{{ ch.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

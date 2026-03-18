@@ -1,0 +1,230 @@
+/* Hypatia - Readable typography */
+
+:root {
+  --font-body: "Georgia", "Times New Roman", serif;
+  --font-heading: "Georgia", "Times New Roman", serif;
+  --font-mono: "Consolas", "Monaco", monospace;
+  --max-width: 70ch;
+  --line-height: 1.7;
+  --color-text: #1a1a1a;
+  --color-muted: #555;
+  --color-link: #0066cc;
+  --color-border: #ddd;
+  --sidebar-width: 12rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  line-height: var(--line-height);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+}
+
+/* Site header */
+.site-header {
+  border-bottom: 1px solid var(--color-border);
+  padding: 1rem 2rem;
+}
+
+.site-nav a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.site-nav a:hover {
+  color: var(--color-link);
+}
+
+/* Main content */
+.site-main {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Page content - readable width */
+.page-content,
+.page-body,
+.author-intro {
+  max-width: var(--max-width);
+}
+
+.page-header h1 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Book list, world list */
+.book-list,
+.world-list,
+.chapter-list {
+  margin-top: 2rem;
+}
+
+.book-list h2,
+.world-list h2,
+.chapter-list h2 {
+  font-size: 1.1rem;
+  color: var(--color-muted);
+  margin-bottom: 0.5rem;
+}
+
+.book-list ul,
+.world-list ul,
+.chapter-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.book-list li,
+.world-list li,
+.chapter-list li {
+  margin: 0.25rem 0;
+}
+
+.book-list a,
+.world-list a,
+.chapter-list a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+.book-list a:hover,
+.world-list a:hover,
+.chapter-list a:hover {
+  text-decoration: underline;
+}
+
+/* Chapter page with sidebar */
+.chapter-page {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.chapter-sidebar {
+  flex-shrink: 0;
+  width: var(--sidebar-width);
+  position: sticky;
+  top: 2rem;
+}
+
+.chapter-toc {
+  padding: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+}
+
+.chapter-toc h2 {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  margin: 0 0 0.75rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.chapter-toc ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.chapter-toc li {
+  margin: 0.25rem 0;
+}
+
+.chapter-toc a {
+  color: var(--color-link);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.chapter-toc li.current a {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.chapter-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.chapter-content .page-body {
+  max-width: var(--max-width);
+}
+
+/* Footnotes (Librarian voice - meta-commentary) */
+.footnotes {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--color-muted);
+}
+
+.footnotes ol {
+  padding-left: 1.5rem;
+}
+
+.footnotes li {
+  margin: 0.5rem 0;
+}
+
+.footnotes .reversefootnote {
+  font-style: normal;
+  text-decoration: none;
+}
+
+sup {
+  font-size: 0.75em;
+}
+
+/* Mobile: sidebar collapses */
+@media (max-width: 768px) {
+  .chapter-page {
+    flex-direction: column;
+  }
+
+  .chapter-sidebar {
+    position: static;
+    width: 100%;
+  }
+
+  .chapter-toc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .chapter-toc h2 {
+    margin-right: 0.5rem;
+  }
+
+  .chapter-toc ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 1rem;
+  }
+
+  .chapter-toc li {
+    margin: 0;
+  }
+}
+
+/* Site footer */
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}

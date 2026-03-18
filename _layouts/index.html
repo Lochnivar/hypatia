@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<article class="index-page">
+  <header class="page-header">
+    <h1>{{ site.title }}</h1>
+  </header>
+  <div class="author-intro page-content">
+    {{ site.data.author.bio | markdownify }}
+  </div>
+  <nav class="world-list">
+    <h2>Worlds</h2>
+    <ul>
+      {% assign worlds = site.pages | where: "layout", "world" | sort: "order" %}
+      {% for world in worlds %}
+      <li><a href="{{ world.url | relative_url }}">{{ world.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</article>

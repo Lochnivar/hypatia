@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<article class="chapter-page">
+  <aside class="chapter-sidebar">
+    {% include chapter-sidebar.html %}
+  </aside>
+  <div class="chapter-content">
+    <header class="page-header">
+      <h1>{{ page.title }}</h1>
+    </header>
+    <div class="page-body">
+      {{ content }}
+    </div>
+  </div>
+</article>
