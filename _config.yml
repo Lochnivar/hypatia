@@ -3,8 +3,8 @@
 
 title: Hypatia
 description: A static site for self-published stories
-baseurl: ""
-url: ""
+baseurl: "/hypatia"
+url: "https://lochnivar.github.io"
 
 # Exclude meta folder from build (author/AI reference only)
 exclude:
