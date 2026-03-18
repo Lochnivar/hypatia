@@ -28,6 +28,7 @@ Content lives at repo root. No `content/` prefix.
 ```
 
 - **meta/** — Excluded from build. Librarian voice guide, styling, examples. For author/AI reference only.
+- **library/** — The Librarian (MJFL) and staff. MJFL is the Hypatia footnote voice; staffers are Kronvoldt, Auto, Claudette. See `meta/librarian/mjfl.md`.
 
 ## Frontmatter
 

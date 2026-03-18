@@ -42,6 +42,19 @@ body {
   color: var(--color-link);
 }
 
+.nav-sep {
+  margin: 0 0.5rem;
+  color: var(--color-muted);
+}
+
+.page-header .subtitle,
+.page-header .role {
+  font-size: 1rem;
+  color: var(--color-muted);
+  margin: 0.25rem 0 0 0;
+  font-weight: normal;
+}
+
 /* Main content */
 .site-main {
   max-width: 90rem;
