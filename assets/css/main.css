@@ -1,16 +1,20 @@
-/* Hypatia - Readable typography */
+/* Hypatia — Attractive, readable. No interactivity. */
 
 :root {
-  --font-body: "Georgia", "Times New Roman", serif;
-  --font-heading: "Georgia", "Times New Roman", serif;
-  --font-mono: "Consolas", "Monaco", monospace;
-  --max-width: 70ch;
-  --line-height: 1.7;
-  --color-text: #1a1a1a;
-  --color-muted: #555;
-  --color-link: #0066cc;
-  --color-border: #ddd;
+  --font-body: "Crimson Pro", Georgia, serif;
+  --font-heading: "Source Sans 3", system-ui, sans-serif;
+  --max-width: 65ch;
+  --line-height: 1.75;
+  --color-bg: #f7f5f1;
+  --color-paper: #fffefb;
+  --color-text: #2c2419;
+  --color-text-soft: #4a4238;
+  --color-muted: #6b6256;
+  --color-accent: #7a5c3e;
+  --color-border: #e5e0d8;
   --sidebar-width: 12rem;
+  --radius: 4px;
+  --shadow: 0 1px 2px rgba(44, 36, 25, 0.05);
 }
 
 * {
@@ -22,29 +26,49 @@ body {
   font-size: 1.1rem;
   line-height: var(--line-height);
   color: var(--color-text);
+  background: var(--color-bg);
   margin: 0;
   padding: 0;
 }
 
 /* Site header */
 .site-header {
+  background: var(--color-paper);
   border-bottom: 1px solid var(--color-border);
   padding: 1rem 2rem;
+  box-shadow: var(--shadow);
+}
+
+.site-nav {
+  max-width: 70rem;
+  margin: 0 auto;
+  font-family: var(--font-heading);
+  font-weight: 500;
 }
 
 .site-nav a {
   color: var(--color-text);
   text-decoration: none;
-  font-weight: 600;
-}
-
-.site-nav a:hover {
-  color: var(--color-link);
 }
 
 .nav-sep {
   margin: 0 0.5rem;
-  color: var(--color-muted);
+  color: var(--color-border);
+}
+
+/* Main content */
+.site-main {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+}
+
+.page-header h1 {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  color: var(--color-text);
 }
 
 .page-header .subtitle,
@@ -55,64 +79,161 @@ body {
   font-weight: normal;
 }
 
-/* Main content */
-.site-main {
-  max-width: 90rem;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-/* Page content - readable width */
+/* Prose */
 .page-content,
 .page-body,
 .author-intro {
   max-width: var(--max-width);
 }
 
-.page-header h1 {
-  font-size: 1.75rem;
-  margin-bottom: 1.5rem;
+.page-content p,
+.page-body p,
+.author-intro p {
+  margin: 0 0 1.15rem 0;
 }
 
-/* Book list, world list */
-.book-list,
-.world-list,
-.chapter-list {
-  margin-top: 2rem;
+.page-content p:last-child,
+.page-body p:last-child {
+  margin-bottom: 0;
 }
 
-.book-list h2,
-.world-list h2,
-.chapter-list h2 {
-  font-size: 1.1rem;
-  color: var(--color-muted);
-  margin-bottom: 0.5rem;
+.page-content h1,
+.page-body h1,
+.author-intro h1 {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 1.75rem 0 0.5rem 0;
+  color: var(--color-text);
 }
 
-.book-list ul,
-.world-list ul,
-.chapter-list ul {
-  list-style: none;
-  padding: 0;
+.page-content h2,
+.page-body h2,
+.author-intro h2 {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.5rem 0;
+  color: var(--color-text);
 }
 
-.book-list li,
-.world-list li,
-.chapter-list li {
+.page-content h3,
+.page-body h3,
+.author-intro h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 1.25rem 0 0.5rem 0;
+  color: var(--color-text-soft);
+}
+
+.page-content ul,
+.page-body ul,
+.author-intro ul,
+.page-content ol,
+.page-body ol,
+.author-intro ol {
+  margin: 0 0 1.15rem 0;
+  padding-left: 1.5rem;
+}
+
+.page-content li,
+.page-body li,
+.author-intro li {
   margin: 0.25rem 0;
 }
 
-.book-list a,
-.world-list a,
-.chapter-list a {
-  color: var(--color-link);
+.page-content blockquote,
+.page-body blockquote,
+.author-intro blockquote {
+  margin: 1.25rem 0;
+  padding: 0.5rem 1rem;
+  border-left: 4px solid var(--color-accent);
+  background: rgba(122, 92, 62, 0.06);
+  color: var(--color-text-soft);
+  font-style: italic;
+}
+
+.page-content hr,
+.page-body hr,
+.author-intro hr {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 1.75rem 0;
+}
+
+.page-content a,
+.page-body a,
+.author-intro a {
+  color: var(--color-accent);
   text-decoration: none;
 }
 
-.book-list a:hover,
-.world-list a:hover,
-.chapter-list a:hover {
-  text-decoration: underline;
+/* Index page */
+.index-page .author-intro {
+  font-size: 1.1rem;
+  color: var(--color-text-soft);
+  margin-bottom: 1.5rem;
+}
+
+/* World, book, chapter lists */
+.world-list,
+.book-list,
+.chapter-list {
+  margin-top: 2rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.world-list h2,
+.book-list h2,
+.chapter-list h2 {
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-muted);
+  margin: 0 0 0.75rem 0;
+}
+
+.world-list ul,
+.book-list ul,
+.chapter-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.world-list li,
+.book-list li,
+.chapter-list li {
+  margin: 0;
+}
+
+.world-list a,
+.book-list a,
+.chapter-list a {
+  display: block;
+  padding: 0.6rem 1rem;
+  color: var(--color-text);
+  text-decoration: none;
+  background: var(--color-paper);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.world-list > p {
+  margin: 0 0 0.75rem 0;
+  font-size: 1rem;
+}
+
+.world-list > p a {
+  color: var(--color-accent);
+  text-decoration: none;
 }
 
 /* Chapter page with sidebar */
@@ -131,16 +252,20 @@ body {
 
 .chapter-toc {
   padding: 1rem;
+  background: var(--color-paper);
   border: 1px solid var(--color-border);
-  border-radius: 4px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
 
 .chapter-toc h2 {
-  font-size: 0.9rem;
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
   color: var(--color-muted);
   margin: 0 0 0.75rem 0;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
 }
 
 .chapter-toc ul {
@@ -150,18 +275,18 @@ body {
 }
 
 .chapter-toc li {
-  margin: 0.25rem 0;
+  margin: 0.2rem 0;
 }
 
 .chapter-toc a {
-  color: var(--color-link);
+  color: var(--color-text-soft);
   text-decoration: none;
   font-size: 0.95rem;
 }
 
 .chapter-toc li.current a {
   font-weight: 600;
-  color: var(--color-text);
+  color: var(--color-accent);
 }
 
 .chapter-content {
@@ -173,18 +298,19 @@ body {
   max-width: var(--max-width);
 }
 
-/* Footnotes (Librarian voice - meta-commentary) */
+/* Footnotes */
 .footnotes {
   margin-top: 2rem;
-  padding-top: 1rem;
+  padding-top: 1.25rem;
   border-top: 1px solid var(--color-border);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-style: italic;
   color: var(--color-muted);
 }
 
 .footnotes ol {
   padding-left: 1.5rem;
+  margin: 0;
 }
 
 .footnotes li {
@@ -194,16 +320,22 @@ body {
 .footnotes .reversefootnote {
   font-style: normal;
   text-decoration: none;
+  color: var(--color-accent);
 }
 
 sup {
   font-size: 0.75em;
 }
 
-/* Mobile: sidebar collapses */
+/* Mobile */
 @media (max-width: 768px) {
+  .site-main {
+    padding: 1.5rem 1.25rem;
+  }
+
   .chapter-page {
     flex-direction: column;
+    gap: 1.5rem;
   }
 
   .chapter-sidebar {
@@ -220,6 +352,7 @@ sup {
 
   .chapter-toc h2 {
     margin-right: 0.5rem;
+    margin-bottom: 0;
   }
 
   .chapter-toc ul {
@@ -235,9 +368,15 @@ sup {
 
 /* Site footer */
 .site-footer {
+  background: var(--color-paper);
   border-top: 1px solid var(--color-border);
-  padding: 1rem 2rem;
-  margin-top: 3rem;
+  padding: 1.25rem 2rem;
+  margin-top: 2.5rem;
   font-size: 0.9rem;
   color: var(--color-muted);
+}
+
+.site-footer p {
+  max-width: 70rem;
+  margin: 0 auto;
 }
