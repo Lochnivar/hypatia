@@ -28,6 +28,6 @@ The Librarian's typewriter is off-limits to Kronvoldt and Auto. All corrections 
 ## Cross-Reference
 
 - **Public page:** `/library/mjfl/`
-- **Staff pages:** `/library/staff/kronvoldt/`, `/library/staff/auto/`, `/library/staff/claudette/`
+- **Staff page:** `/library/staff/`
 - **Voice guide:** `meta/librarian/voice.md`
 - **Footnote examples:** `meta/librarian/examples.md`

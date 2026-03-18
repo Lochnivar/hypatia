@@ -14,11 +14,10 @@ Portable reference for AI and authors. Hypatia is a static Jekyll site for self-
 ├── assets/css/
 ├── index.md
 ├── library/
+│   ├── index.md             # Library intro
 │   ├── mjfl.md              # The Librarian (MJFL)
 │   └── staff/
-│       ├── kronvoldt.md
-│       ├── auto.md
-│       └── claudette.md
+│       └── index.md          # Staff (Kronvoldt, Auto, Claudette)
 ├── <world-slug>/
 │   ├── index.md             # World intro
 │   ├── <book-slug>/

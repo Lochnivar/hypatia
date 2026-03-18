@@ -10,7 +10,7 @@ layout: default
     {{ site.data.library.intro | markdownify }}
   </div>
   <nav class="world-list">
-    <p><a href="{{ '/library/mjfl/' | relative_url }}">The Library</a> — Meet the Librarian and staff</p>
+    <p><a href="{{ '/library/' | relative_url }}">The Library</a> — Meet the Librarian and staff</p>
     <h2>Worlds</h2>
     <ul>
       {% assign worlds = site.pages | where: "layout", "world" | sort: "order" %}
