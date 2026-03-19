@@ -321,6 +321,45 @@ body {
   max-width: var(--max-width);
 }
 
+/* Code blocks in chapter prose */
+.page-body .highlighter-rouge,
+.page-body pre {
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  background: var(--color-paper);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.page-body .highlighter-rouge .highlight,
+.page-body pre.highlight {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.page-body .highlighter-rouge pre,
+.page-body pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.page-body .highlighter-rouge code,
+.page-body pre code {
+  font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, monospace;
+  font-size: inherit;
+  padding: 0;
+  background: none;
+}
+
 /* Footnotes */
 .footnotes {
   margin-top: 2rem;
