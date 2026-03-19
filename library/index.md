@@ -16,7 +16,7 @@ The metaphor is purely conceptual. No mortal—and few of the First Children—w
 
 ## The Hypatia Collection
 
-This site—the Hypatia Collection—is a curated subset of those manuscripts. The stories here inhabit their own worlds: Iolinus, Ashverse, and others. Each world has its own chronicles, its own voice, its own rules. The stories stand on their own. They require no prior knowledge of the greater cosmology.
+This site—the Hypatia Collection—is a curated subset of those manuscripts. The stories here inhabit their own worlds: Iolinus, Ashverse, Algernon, Greater Southwest, and others. Each world has its own chronicles, its own voice, its own rules. The stories stand on their own. They require no prior knowledge of the greater cosmology.
 
 The footnotes throughout these works are the work of the Librarian and his staff—meta-commentary from beyond the narrative, delivered in dry observations, pedantic corrections, and the occasional (begrudging) nod of approval. The marginalia exists as an additional layer for those who enjoy such things.
 
