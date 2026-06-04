@@ -16,7 +16,7 @@ The metaphor is purely conceptual. No mortal—and few of the First Children—w
 
 ## The Hypatia Collection
 
-This site—the Hypatia Collection—is a curated subset of those manuscripts. The stories here inhabit their own worlds: Iolinus, Ashverse, Algernon, Greater Southwest, and others. Each world has its own chronicles, its own voice, its own rules. The stories stand on their own. They require no prior knowledge of the greater cosmology.
+This site—the Hypatia Collection—is a curated subset of those manuscripts. The stories here inhabit their own worlds: Iolanu, Ashverse, Algernon, Greater Southwest, and others. Each world has its own chronicles, its own voice, its own rules. The stories stand on their own. They require no prior knowledge of the greater cosmology.
 
 The footnotes throughout these works are the work of the Librarian and his staff—meta-commentary from beyond the narrative, delivered in dry observations, pedantic corrections, and the occasional (begrudging) nod of approval. The marginalia exists as an additional layer for those who enjoy such things.
 
@@ -33,7 +33,7 @@ For readers who encounter these elsewhere in the collection:
 - **Prime Author** — The true creator of all existence. Created Hypatia and the First Children, then withdrew forever. Not an active presence; the "watchmaker" who wound the clock and stepped away.
 - **First Children** — The Prime Author's first creations. Godlike beings—siblings—who can create worlds, shape reality, and exist outside mortal time. They conceptually "inhabit the library" and can "author new books." The Librarian was employed by one of them.
 - **Hypatia** — The over-universe; the Library. Not a literal building but the closest approximation any mind can hold of the structure that contains all worlds. In the First Speech, *hypatia* means both "library" and "creator."
-- **Worlds** — The "books" in the library. Each story-world (Iolinus, Ashverse, etc.) is its own manuscript, with its own rules, created by one or more First Children.
+- **Worlds** — The "books" in the library. Each story-world (Iolanu, Ashverse, etc.) is its own manuscript, with its own rules, created by one or more First Children.
 
 ## Staff
 
